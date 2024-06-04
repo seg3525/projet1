@@ -11,7 +11,7 @@ function App() {
     <>
       <Navigation />
       <Hero />
-      <div className="wrapper">
+      <div className="bg-black">
         <Services />
         <Experts />
         <Contact />
