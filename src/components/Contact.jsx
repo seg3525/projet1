@@ -11,12 +11,14 @@ export default function Contact() {
     <section id="contact" className="py-5 text-white bg-dark">
       <div className="container">
         <div className="row">
-          <h2 className="display-4 fw-bolder">Contactez-nous</h2>
-          <p className="lead">
+          <h2 className="display-4 fw-bolder" data-aos="fade-up">
+            Contactez-nous
+          </h2>
+          <p className="lead" data-aos="fade-up">
             Remplissez le formulaire ci-dessous pour prendre un rendez-vous
           </p>
           <div className="d-flex flex-row justify-content-between align-items-center gap-3 flex-wrap">
-            <div>
+            <div data-aos="fade-up">
               <img
                 src={contact_chef}
                 alt="contact_chef"
@@ -30,7 +32,7 @@ export default function Contact() {
                   setConfirmationOpen(true);
                 }}
               >
-                <div className="mb-3">
+                <div className="mb-3" data-aos="fade-up">
                   <label htmlFor="name" className="form-label">
                     Nom
                   </label>
@@ -42,7 +44,7 @@ export default function Contact() {
                     required
                   />
                 </div>
-                <div className="mb-3">
+                <div className="mb-3" data-aos="fade-up">
                   <label htmlFor="email" className="form-label">
                     Email
                   </label>
@@ -54,7 +56,7 @@ export default function Contact() {
                     required
                   />
                 </div>
-                <div className="mb-3">
+                <div className="mb-3" data-aos="fade-up">
                   <label htmlFor="service" className="form-label">
                     Service
                   </label>
@@ -65,7 +67,7 @@ export default function Contact() {
                     <option value="3">Évenement</option>
                   </select>
                 </div>
-                <div className="mb-3">
+                <div className="mb-3" data-aos="fade-up">
                   <label htmlFor="expert" className="form-label">
                     Expert
                   </label>
@@ -76,7 +78,7 @@ export default function Contact() {
                     <option value="3">Raj</option>
                   </select>
                 </div>
-                <div className="mb-3">
+                <div className="mb-3" data-aos="fade-up">
                   <label
                     htmlFor="date"
                     className="form-label d-flex flex-row gap-2 align-items-center justify-content-between"
@@ -115,7 +117,11 @@ export default function Contact() {
                     ))}
                   </div>
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  data-aos="fade-up"
+                >
                   Envoyer
                 </button>
               </form>

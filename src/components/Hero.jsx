@@ -25,9 +25,18 @@ export default function Hero() {
         }}
       ></div>
       <div className="container text-center text-white z-2">
-        <h1 className="display-1 fw-bolder">Chef</h1>
-        <p className="lead">Cuisine de luxe dans le comfort de votre maison</p>
-        <a className="nav-link" href="#services">
+        <h1 className="display-1 fw-bolder" data-aos="fade-up">
+          Chef
+        </h1>
+        <p className="lead" data-aos="fade-up" data-aos-delay="250">
+          Cuisine de luxe dans le comfort de votre maison
+        </p>
+        <a
+          className="nav-link"
+          href="#services"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <button className="btn btn-primary">Explorer nos Services</button>
         </a>
       </div>

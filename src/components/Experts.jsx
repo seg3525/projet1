@@ -77,14 +77,28 @@ export default function Experts() {
   ];
 
   return (
-    <section id="experts" className="py-5">
+    <section id="experts" className="py-5 my-5">
       <div className="container px-5">
         <div className="row px-5">
-          <h2 className="display-4 fw-bolder text-white">Nos Experts</h2>
-          <p className="lead text-white mb-5">
+          <h2
+            className="display-4 fw-bolder text-white"
+            data-aos="fade-up"
+            data-aos-offset="250"
+          >
+            Nos Experts
+          </h2>
+          <p
+            className="lead text-white mb-5"
+            data-aos="fade-up"
+            data-aos-offset="250"
+          >
             Voici les experts qui prépareront vos repas
           </p>
-          <div className="col-lg-4 col-md-6 mt-3">
+          <div
+            className="col-lg-4 col-md-6 mt-3"
+            data-aos="fade-right"
+            data-aos-offset="250"
+          >
             <div className="card rounded-5">
               <img
                 src={experts[0].image}
@@ -106,7 +120,11 @@ export default function Experts() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 mt-3">
+          <div
+            className="col-lg-4 col-md-6 mt-3"
+            data-aos="fade-up"
+            data-aos-offset="250"
+          >
             <div className="card rounded-5">
               <img
                 src={experts[1].image}
@@ -128,7 +146,11 @@ export default function Experts() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 mt-3">
+          <div
+            className="col-lg-4 col-md-6 mt-3"
+            data-aos="fade-left"
+            data-aos-offset="250"
+          >
             <div className="card rounded-5">
               <img
                 src={experts[2].image}

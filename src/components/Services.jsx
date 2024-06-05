@@ -48,12 +48,14 @@ export default function Services() {
   return (
     <section id="services" className="bg-dark py-5">
       <div className="container">
-        <h2 className="display-4 fw-bolder text-white">Nos Services</h2>
-        <p className="lead text-white mb-5">
+        <h2 className="display-4 fw-bolder text-white" data-aos="fade-up">
+          Nos Services
+        </h2>
+        <p className="lead text-white mb-5" data-aos="fade-up">
           Voici les différents services que nous offrons
         </p>
         <div className="row g-4 mt-5 d-flex justify-content-center align-items-start">
-          <div className="col-md-6 col-lg-3">
+          <div className="col-md-6 col-lg-3" data-aos="fade-right">
             <div className="card rounded-3">
               <img
                 src={services[0].image}
@@ -76,10 +78,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div
-            className="col-md-6 col-lg-3"
-            style={{ display: "flex", height: "100%" }}
-          >
+          <div className="col-md-6 col-lg-3" data-aos="fade-up">
             <div className="card rounded-3">
               <img
                 src={services[1].image}
@@ -102,7 +101,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-3" style={{ height: "100%" }}>
+          <div className="col-md-6 col-lg-3" data-aos="fade-up">
             <div className="card rounded-3">
               <img
                 src={services[2].image}
@@ -125,7 +124,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-3">
+          <div className="col-md-6 col-lg-3" data-aos="fade-left">
             <div className="card  rounded-3">
               <img
                 src={services[3].image}

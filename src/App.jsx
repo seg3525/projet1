@@ -5,8 +5,14 @@ import Experts from "./components/Experts";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
+import { useEffect } from "react";
+import aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    aos.init({ duration: 700 });
+  }, []);
   return (
     <>
       <Navigation />
