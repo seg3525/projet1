@@ -5,6 +5,7 @@ import confirm from "../assets/confirm.svg";
 
 export default function Contact() {
   const [confirmationOpen, setConfirmationOpen] = useState(false);
+  const [amountOfBookings, setAmountOfBookings] = useState(1);
 
   return (
     <section id="contact" className="py-5 text-white bg-dark">
@@ -76,15 +77,43 @@ export default function Contact() {
                   </select>
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="date" className="form-label">
+                  <label
+                    htmlFor="date"
+                    className="form-label d-flex flex-row gap-2 align-items-center justify-content-between"
+                  >
                     Date et Heure
+                    <div className="d-flex justify-content-between align-items-center gap-2">
+                      <button
+                        className="btn btn-secondary"
+                        disabled={amountOfBookings === 5}
+                        onClick={() => {
+                          setAmountOfBookings(amountOfBookings + 1);
+                        }}
+                      >
+                        <i className="bi bi-plus" />
+                      </button>
+                      <button
+                        className="btn btn-secondary"
+                        disabled={amountOfBookings === 1}
+                        onClick={() => {
+                          setAmountOfBookings(amountOfBookings - 1);
+                        }}
+                      >
+                        <i className="bi bi-dash" />
+                      </button>
+                    </div>
                   </label>
-                  <input
-                    type="datetime-local"
-                    className="form-control"
-                    id="date"
-                    required
-                  />
+                  <div className="d-flex flex-column gap-2">
+                    {[...Array(amountOfBookings)].map((_, index) => (
+                      <input
+                        type="datetime-local"
+                        className="form-control"
+                        id="date"
+                        required
+                        key={index}
+                      />
+                    ))}
+                  </div>
                 </div>
                 <button type="submit" className="btn btn-primary">
                   Envoyer
