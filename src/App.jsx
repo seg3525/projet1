@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Services from "./components/Services";
 import Experts from "./components/Experts";
 import Contact from "./components/Contact";
@@ -18,6 +19,7 @@ function App() {
       <Navigation />
       <Hero />
       <div className="bg-black">
+        <About />
         <Services />
         <Experts />
         <Contact />
