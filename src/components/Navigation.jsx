@@ -2,7 +2,6 @@ import chef_icon from "../assets/chef_icon.svg";
 
 export default function Navigation() {
   return (
-    //bootstrap navbar, title on the left, links on the right with button at the end,
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top z-3 shadow-lg">
       <div className="container">
         <a className="navbar-brand  d-flex align-items-center" href="#">

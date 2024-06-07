@@ -2,14 +2,12 @@ import chef_bg from "../assets/chef_bg.webp";
 
 export default function Hero() {
   return (
-    //bootstrap hero section with bg image, title, description and button
     <section
       className="hero d-flex justify-content-center align-items-center"
       style={{
         backgroundImage: `url(${chef_bg})`,
         height: "100vh",
         backgroundSize: "cover",
-        //fixed background image
         backgroundAttachment: "fixed",
       }}
     >

@@ -1,4 +1,3 @@
-//import bootstrap icons
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Footer() {
