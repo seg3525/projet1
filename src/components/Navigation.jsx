@@ -25,6 +25,11 @@ export default function Navigation() {
         >
           <ul className="navbar-nav align-items-center">
             <li className="nav-item">
+              <a className="nav-link" href="#about">
+                À Propos
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="#services">
                 Services
               </a>
